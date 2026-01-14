@@ -300,10 +300,15 @@
 /* Print styles for Hero */
 @media print {
   .hero {
-    min-height: auto !important;
-    height: auto !important;
+    min-height: 100vh !important;
+    height: 100vh !important;
     background: #111111 !important;
-    padding: 2rem 1rem !important;
+    padding: 3rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
   }
 
   .heroVideo,
@@ -315,20 +320,24 @@
 
   .heroInner {
     margin: 0 auto !important;
-    padding: 1rem !important;
+    padding: 2rem !important;
     animation: none !important;
-    max-width: 100% !important;
+    max-width: 90% !important;
     text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .serviceLabel {
     color: rgba(255, 255, 255, 0.7) !important;
     text-align: center !important;
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 1rem !important;
   }
 
   .title {
-    font-size: 2.2rem !important;
+    font-size: 2.5rem !important;
     margin-top: 0 !important;
     color: #ffffff !important;
     text-align: center !important;
@@ -336,16 +345,17 @@
   }
 
   .subtitle {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     color: rgba(255, 255, 255, 0.9) !important;
     text-align: center !important;
-    max-width: 100% !important;
-    margin: 1rem auto 1.5rem !important;
+    max-width: 80% !important;
+    margin: 1.5rem auto 2rem !important;
     line-height: 1.6 !important;
   }
 
   .heroActions {
     justify-content: center !important;
+    gap: 1.5rem !important;
   }
 
   .primaryAction,
@@ -353,8 +363,8 @@
     background: transparent !important;
     border: 1px solid #ffffff !important;
     color: #ffffff !important;
-    padding: 0.6rem 1.2rem !important;
-    font-size: 0.85rem !important;
+    padding: 0.8rem 1.5rem !important;
+    font-size: 0.9rem !important;
   }
 
   .primaryAction::before,

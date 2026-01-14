@@ -842,14 +842,16 @@
 
 @media print {
   .titleText {
-    font-size: 1.6rem !important;
-    margin-bottom: 0.5rem !important;
+    font-size: 1.4rem !important;
+    margin-bottom: 0.4rem !important;
+    text-align: center !important;
   }
 
   .descriptionText {
-    font-size: 0.85rem !important;
-    margin-bottom: 0.75rem !important;
-    line-height: 1.5 !important;
+    font-size: 0.75rem !important;
+    margin-bottom: 0.5rem !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
   }
 
   .goal {
@@ -858,8 +860,8 @@
     opacity: 1 !important;
     transform: none !important;
     animation: none !important;
-    padding: 1rem !important;
-    margin: 0.75rem 0 !important;
+    padding: 0.6rem !important;
+    margin: 0.4rem 0 !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
   }
@@ -869,36 +871,39 @@
   }
 
   .goal h3 {
-    font-size: 1.2rem !important;
-    margin-bottom: 0.5rem !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 0.3rem !important;
   }
 
   .goal p {
-    font-size: 0.85rem !important;
-    margin-bottom: 0.75rem !important;
-    line-height: 1.5 !important;
+    font-size: 0.7rem !important;
+    margin-bottom: 0.4rem !important;
+    line-height: 1.4 !important;
   }
 
   .billingModel {
     background: rgba(73, 196, 60, 0.2) !important;
     backdrop-filter: none !important;
-    padding: 0.75rem 1rem !important;
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.7rem !important;
   }
 
-  /* Force page break before Process section */
+  /* NO page break before Process section - merge with FlowOne intro */
   .processSection {
-    page-break-before: always !important;
-    break-before: page !important;
+    page-break-before: auto !important;
+    break-before: auto !important;
+    margin-top: 0.5rem !important;
   }
 
   .processTitle {
-    font-size: 1.5rem !important;
-    margin: 0 0 0.75rem !important;
+    font-size: 1.1rem !important;
+    margin: 0.3rem 0 0.4rem !important;
+    text-align: center !important;
   }
 
   .processStepsStatic {
     grid-template-columns: repeat(5, 1fr) !important;
-    gap: 0.4rem !important;
+    gap: 0.3rem !important;
   }
 
   .processStepStatic {
@@ -910,7 +915,7 @@
   }
 
   .processStepStatic .stepImageWrapper {
-    height: 60px !important;
+    height: 45px !important;
   }
 
   .stepImage {
@@ -918,35 +923,44 @@
   }
 
   .processStepStatic .stepContent {
-    padding: 0.5rem !important;
+    padding: 0.35rem !important;
   }
 
   .processStepStatic h4 {
     color: #ffffff !important;
-    font-size: 0.75rem !important;
-    margin-bottom: 0.2rem !important;
+    font-size: 0.65rem !important;
+    margin-bottom: 0.15rem !important;
   }
 
   .processStepStatic p {
     color: rgba(255, 255, 255, 0.85) !important;
-    font-size: 0.6rem !important;
-    line-height: 1.3 !important;
+    font-size: 0.5rem !important;
+    line-height: 1.2 !important;
   }
 
   /* Force page break before Areas section */
   .areasSection {
     page-break-before: always !important;
     break-before: page !important;
+    min-height: 100vh !important;
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    padding: 2rem !important;
   }
 
   .areasTitle {
     font-size: 1.5rem !important;
     margin: 0 0 0.4rem !important;
+    text-align: center !important;
   }
 
   .areasSubtitle {
     font-size: 0.8rem !important;
     margin-bottom: 0.75rem !important;
+    text-align: center !important;
   }
 
   .automationAreas {

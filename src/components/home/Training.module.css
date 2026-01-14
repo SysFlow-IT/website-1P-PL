@@ -658,9 +658,14 @@
 @media print {
   .section {
     background: #111111 !important;
-    min-height: auto !important;
-    height: auto !important;
-    padding: 1rem 0 !important;
+    min-height: 100vh !important;
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    padding: 2rem 3rem !important;
   }
 
   .videoBackground,
@@ -675,6 +680,7 @@
   .agendaSubtitleText {
     text-shadow: none !important;
     filter: none !important;
+    text-align: center !important;
   }
 
   .titleText {
@@ -700,6 +706,7 @@
   .features h3 {
     font-size: 1.2rem !important;
     margin-bottom: 0.75rem !important;
+    text-align: center !important;
   }
 
   .featuresGrid {
@@ -759,13 +766,18 @@
     margin-top: 0.5rem !important;
   }
 
-  /* Force page break before Agenda section */
+  /* Force page break before Agenda section - full page centered */
   .agendaSection {
     page-break-before: always !important;
     break-before: page !important;
-    min-height: auto !important;
-    height: auto !important;
-    padding: 1rem 0 !important;
+    min-height: 100vh !important;
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    padding: 2rem 3rem !important;
   }
 
   .agendaTitle,
@@ -773,12 +785,14 @@
     margin-top: 0 !important;
     font-size: 1.6rem !important;
     margin-bottom: 0.5rem !important;
+    text-align: center !important;
   }
 
   .agendaSubtitle,
   .agendaSubtitleText {
     font-size: 0.85rem !important;
     margin-bottom: 0.75rem !important;
+    text-align: center !important;
   }
 
   .agendaGrid {
