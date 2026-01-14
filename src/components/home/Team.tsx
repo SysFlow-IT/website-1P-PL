@@ -6,9 +6,9 @@ export const Team: React.FC = () => {
   return (
     <section id="team" className={`${styles.section} section section--dark`}>
       <div className="container">
-        <h2 className="section-title">Zespol SysFlow</h2>
+        <h2 className="section-title">Zespół SysFlow</h2>
         <p className={`section-description ${styles.fullWidthDescription}`}>
-          Za sukcesem firmy stoja doswiadczeni specjalisci z pasja do
+          Za sukcesem firmy stoją doświadczeni specjaliści z pasją do
           optymalizacji i automatyzacji.
         </p>
 

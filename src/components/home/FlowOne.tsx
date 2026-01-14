@@ -10,18 +10,18 @@ export const FlowOne: React.FC = () => {
           FlowOne SYSTEM: Inteligentne Centrum Danych
         </h2>
         <p className={`section-description ${styles.descriptionText}`}>
-          FlowOne SYSTEM to kompleksowe rozwiazanie, ktore centralizuje dane z
-          wszystkich systemow firmowych i automatyzuje kluczowe procesy.
+          FlowOne SYSTEM to kompleksowe rozwiązanie, które centralizuje dane z
+          wszystkich systemów firmowych i automatyzuje kluczowe procesy.
           Wykorzystujemy technologie AI oraz platformy Low-Code/No-Code, aby
-          dostarczyc system idealnie dopasowany do Twojej firmy.
+          dostarczyć system idealnie dopasowany do Twojej firmy.
         </p>
 
         <div className={`${styles.goal} ${styles.visible}`}>
-          <h3>Cel wdrozenia</h3>
+          <h3>Cel wdrożenia</h3>
           <p>
-            Usprawnienie pracy poprzez automatyzacje powtarzalnych zadan i
+            Usprawnienie pracy poprzez automatyzację powtarzalnych zadań i
             scentralizowanie danych w jednym, intuicyjnym systemie. Koniec z
-            przeskakiwaniem miedzy dziesiatkami aplikacji - wszystko w jednym
+            przeskakiwaniem między dziesiątkami aplikacji - wszystko w jednym
             miejscu.
           </p>
           <div className={styles.billingModel}>
@@ -54,10 +54,10 @@ export const FlowOne: React.FC = () => {
           </div>
         </div>
 
-        <h3 className={styles.areasTitle}>Przykladowe Obszary Automatyzacji</h3>
+        <h3 className={styles.areasTitle}>Przykładowe Obszary Automatyzacji</h3>
         <p className={styles.areasSubtitle}>
-          FlowOne SYSTEM mozna dostosowac do niemal kazdego procesu biznesowego.
-          Oto najczesciej automatyzowane obszary:
+          FlowOne SYSTEM można dostosować do niemal każdego procesu biznesowego.
+          Oto najczęściej automatyzowane obszary:
         </p>
 
         <div className={styles.automationAreas}>

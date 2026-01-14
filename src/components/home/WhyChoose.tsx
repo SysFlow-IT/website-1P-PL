@@ -6,7 +6,7 @@ export const WhyChoose: React.FC = () => {
   return (
     <section id="why-choose" className={`${styles.section} section section--darker`}>
       <div className="container">
-        <h2 className="section-title">Dlaczego wybrac?</h2>
+        <h2 className="section-title">Dlaczego wybrać?</h2>
         <div className={styles.list}>
           {WHY_CHOOSE_ITEMS.map((item, index) => (
             <article
@@ -39,9 +39,9 @@ export const WhyChoose: React.FC = () => {
         <div className={`${styles.philosophy} ${styles.visible}`}>
           <h3>Nasza Filozofia</h3>
           <p>
-            Wierzymy, ze technologia powinna sluzyc ludziom, a nie na odwrot.
-            Dlatego projektujemy systemy intuicyjne, ktore realnie oszczedzaja
-            czas i redukuja frustracje.
+            Wierzymy, że technologia powinna służyć ludziom, a nie na odwrót.
+            Dlatego projektujemy systemy intuicyjne, które realnie oszczędzają
+            czas i redukują frustrację.
           </p>
         </div>
       </div>

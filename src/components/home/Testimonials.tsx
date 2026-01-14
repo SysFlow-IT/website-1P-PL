@@ -6,7 +6,7 @@ export const Testimonials: React.FC = () => {
   return (
     <section id="testimonials" className={`${styles.section} section`}>
       <div className="container">
-        <h2 className="section-title">Co mowia nasi klienci</h2>
+        <h2 className="section-title">Co mówią nasi klienci</h2>
         <div className={styles.testimonialGrid}>
           {TESTIMONIALS.map((testimonial, index) => (
             <div key={index} className={styles.card}>

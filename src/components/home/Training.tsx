@@ -19,20 +19,20 @@ export const Training: React.FC = () => {
           className={`section-title ${styles.titleText}`}
           style={{ color: "#fff" }}
         >
-          Szkolenie: Przeksztalc Sposob Pracy Zespolu
+          Szkolenie: Przekształć Sposób Pracy Zespołu
         </h2>
         <p
           className={`section-description ${styles.descriptionText}`}
           style={{ color: "#fff" }}
         >
-          Nasze kompleksowe szkolenie to 8 spotkan, ktore wyposaża Twoj zespol w
-          praktyczna wiedze i narzedzia do natychmiastowego zastosowania. Kazde
-          spotkanie trwa 60 minut i konczy sie konkretnymi wskazowkami
-          implementacyjnymi. Celem jest znaczacy efekt po kazdym spotkaniu.
+          Nasze kompleksowe szkolenie to 8 spotkań, które wyposaża Twój zespół w
+          praktyczną wiedzę i narzędzia do natychmiastowego zastosowania. Każde
+          spotkanie trwa 60 minut i kończy się konkretnymi wskazówkami
+          implementacyjnymi. Celem jest znaczący efekt po każdym spotkaniu.
         </p>
 
         <div className={styles.features}>
-          <h3>Co wyrożnia nasze szkolenie?</h3>
+          <h3>Co wyróżnia nasze szkolenie?</h3>
           <div className={styles.featuresGrid}>
             {TRAINING_FEATURES.map((feature, index) => (
               <div
@@ -52,8 +52,8 @@ export const Training: React.FC = () => {
             {TRAINING_PRICE.toLocaleString("pl-PL")} PLN
           </div>
           <p className={styles.priceNote}>
-            Niektore prezentowane aplikacje sa platne - decyzja o ich zakupie
-            nalezy do uczestnikow.
+            Niektóre prezentowane aplikacje są płatne - decyzja o ich zakupie
+            należy do uczestników.
           </p>
         </div>
 
@@ -68,7 +68,7 @@ export const Training: React.FC = () => {
           style={{ color: "#fff" }}
         >
           Program dostosowujemy do specyfiki Twojej firmy, ale standardowa
-          agenda obejmuje nastepujace moduly:
+          agenda obejmuje następujące moduły:
         </p>
 
         <div className={styles.agendaGrid}>

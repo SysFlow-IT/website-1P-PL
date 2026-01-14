@@ -85,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
             >
               <a href="#training" onClick={() => handleLinkClick("training")}>Szkolenie</a>
               <a href="#flowone" onClick={() => handleLinkClick("flowone")}>FlowOne</a>
-              <a href="#team" onClick={() => handleLinkClick("team")}>Zespol</a>
+              <a href="#team" onClick={() => handleLinkClick("team")}>Zespół</a>
               <a href="#testimonials" onClick={() => handleLinkClick("testimonials")}>Opinie</a>
             </div>
             <a

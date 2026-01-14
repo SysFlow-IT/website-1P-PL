@@ -6,7 +6,7 @@ export const Problems: React.FC = () => {
   return (
     <section id="problems" className={`${styles.section} section section--dark`}>
       <div className="container">
-        <h2 className="section-title">Czy w firmie w ktorej pracujesz...</h2>
+        <h2 className="section-title">Czy w firmie w której pracujesz...</h2>
         <div className={styles.list}>
           {PROBLEMS.map((problem, index) => (
             <article

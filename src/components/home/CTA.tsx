@@ -6,18 +6,18 @@ export const CTA: React.FC = () => {
   return (
     <section id="cta" className={`${styles.section} section section--dark`}>
       <div className="container">
-        <h2 className={`section-title ${styles.title}`}>Zacznij Transformacje Juz Dzis</h2>
+        <h2 className={`section-title ${styles.title}`}>Zacznij Transformację Już Dziś</h2>
         <p className={styles.description}>
-          Czy Twoja firma jest gotowa na kolejny poziom efektywnosci? Niezaleznie od tego, czy interesuje Cie
-          kompleksowe szkolenie zespolu, czy wdrozenie zaawansowanego systemu automatyzacji - jestesmy tutaj, aby pomoc.
+          Czy Twoja firma jest gotowa na kolejny poziom efektywności? Niezależnie od tego, czy interesuje Cię
+          kompleksowe szkolenie zespołu, czy wdrożenie zaawansowanego systemu automatyzacji - jesteśmy tutaj, aby pomóc.
         </p>
 
         <div className={`${styles.steps} ${styles.visible}`}>
-          <h3>Nastepne Kroki:</h3>
+          <h3>Następne Kroki:</h3>
           <ol className={styles.stepsList}>
-            <li><strong>Umow bezplatna konsultacje</strong> - porozmawiajmy o Twoich potrzebach</li>
-            <li><strong>Otrzymaj spersonalizowana propozycje</strong> - dostosowana do Twojej firmy</li>
-            <li><strong>Rozpocznij transformacje</strong> - zacznij oszczedzac czas juz teraz</li>
+            <li><strong>Umów bezpłatną konsultację</strong> - porozmawiajmy o Twoich potrzebach</li>
+            <li><strong>Otrzymaj spersonalizowaną propozycję</strong> - dostosowaną do Twojej firmy</li>
+            <li><strong>Rozpocznij transformację</strong> - zacznij oszczędzać czas już teraz</li>
           </ol>
         </div>
 
@@ -28,13 +28,13 @@ export const CTA: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Umow spotkanie
+            Umów spotkanie
           </a>
           <a
             href={CONTACT.phoneLink}
             className={styles.secondary}
           >
-            Zadzwon
+            Zadzwoń
           </a>
         </div>
       </div>

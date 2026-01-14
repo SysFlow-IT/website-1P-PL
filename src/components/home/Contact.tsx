@@ -6,9 +6,9 @@ export const Contact: React.FC = () => {
   return (
     <section id="contact" className={`${styles.section} section section--darker`}>
       <div className="container">
-        <h2 className="section-title">Skontaktuj sie z nami</h2>
+        <h2 className="section-title">Skontaktuj się z nami</h2>
         <p className={styles.description}>
-          Gotowy na transformacje swojego biznesu? Skontaktuj sie z nami.
+          Gotowy na transformację swojego biznesu? Skontaktuj się z nami.
         </p>
         <div className={styles.contactInfo}>
           <a href={`mailto:${CONTACT.email}`} className={styles.contactLink}>
@@ -23,7 +23,7 @@ export const Contact: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Umow spotkanie
+            Umów spotkanie
           </a>
         </div>
       </div>

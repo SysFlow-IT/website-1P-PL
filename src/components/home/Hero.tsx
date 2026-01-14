@@ -20,11 +20,11 @@ export const Hero: React.FC = () => {
       <div className={styles.heroInner}>
         <p className={styles.serviceLabel}>SysFlow /</p>
         <h1 className={styles.title}>
-          Automatyzacja, AI, bezpieczenstwo i systemy zarzadzania danymi
+          Automatyzacja, AI, bezpieczeństwo i systemy zarządzania danymi
         </h1>
         <p className={styles.subtitle}>
-          SysFlow.One to software house, ktory przeksztalca sposob pracy firm
-          poprzez automatyzacje, AI, bezpieczenstwo i systemy zarzadzania danymi.
+          SysFlow.One to software house, który przekształca sposób pracy firm
+          poprzez automatyzację, AI, bezpieczeństwo i systemy zarządzania danymi.
         </p>
         <div className={styles.heroActions}>
           <a
@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Umow spotkanie
+            Umów spotkanie
           </a>
           <a
             href="#flowone"
