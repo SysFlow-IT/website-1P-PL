@@ -179,22 +179,23 @@
 /* Print styles for Team section */
 @media print {
   .section {
-    min-height: 100vh !important;
-    height: 100vh !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    padding: 2rem !important;
-    box-sizing: border-box !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 1rem 0 !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
+  }
+
+  .fullWidthDescription {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.75rem !important;
   }
 
   .teamGrid {
     display: flex !important;
     flex-direction: row !important;
     justify-content: center !important;
-    gap: 2rem !important;
+    gap: 1rem !important;
     max-width: 100% !important;
   }
 
@@ -202,8 +203,8 @@
     opacity: 1 !important;
     transform: none !important;
     animation: none !important;
-    flex: 0 0 250px !important;
-    max-width: 250px !important;
+    flex: 0 0 200px !important;
+    max-width: 200px !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
   }
@@ -211,7 +212,7 @@
   .memberAvatar {
     aspect-ratio: 1 !important;
     height: auto !important;
-    max-height: 200px !important;
+    max-height: 150px !important;
   }
 
   .memberImage {
@@ -224,16 +225,17 @@
 
   .teamMemberContent {
     min-height: auto !important;
-    padding: 1rem !important;
+    padding: 0.5rem !important;
   }
 
   .teamMember h3 {
-    font-size: 1.1rem !important;
+    font-size: 0.9rem !important;
     color: #ffffff !important;
+    margin-bottom: 0.25rem !important;
   }
 
   .memberRole {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
     color: rgba(255, 255, 255, 0.8) !important;
   }
 }

@@ -54,27 +54,24 @@
 @media print {
   .section {
     background: #111111 !important;
-    min-height: 100vh !important;
-    height: 100vh !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    padding: 2rem !important;
-    box-sizing: border-box !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 1.5rem 0 !important;
   }
 
   .description {
     color: rgba(255, 255, 255, 0.9) !important;
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
   }
 
   .contactLink {
     color: #ffffff !important;
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
   }
 
   .bookMeeting {
     background: #22c55e !important;
     color: #ffffff !important;
+    padding: 0.75rem 1.5rem !important;
   }
 }

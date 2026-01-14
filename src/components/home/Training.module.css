@@ -660,6 +660,7 @@
     background: #111111 !important;
     min-height: auto !important;
     height: auto !important;
+    padding: 1rem 0 !important;
   }
 
   .videoBackground,
@@ -676,17 +677,33 @@
     filter: none !important;
   }
 
+  .titleText {
+    font-size: 1.6rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .descriptionText {
+    font-size: 0.85rem !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.5 !important;
+  }
+
   .features {
     background: rgba(30, 30, 30, 0.95) !important;
     backdrop-filter: none !important;
-    padding: 1.5rem !important;
-    margin: 1.5rem 0 !important;
+    padding: 1rem !important;
+    margin: 0.75rem 0 !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
   }
 
+  .features h3 {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
   .featuresGrid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: repeat(5, 1fr) !important;
     gap: 0.5rem !important;
   }
 
@@ -695,11 +712,16 @@
     transform: none !important;
     filter: none !important;
     animation: none !important;
-    padding: 0.5rem !important;
+    padding: 0.25rem !important;
+    font-size: 0.75rem !important;
   }
 
   .feature::before {
     display: none !important;
+  }
+
+  .featureIcon {
+    font-size: 1rem !important;
   }
 
   .priceBox {
@@ -708,8 +730,8 @@
     opacity: 1 !important;
     transform: none !important;
     animation: none !important;
-    padding: 2rem !important;
-    margin: 1.5rem 0 !important;
+    padding: 1rem !important;
+    margin: 0.75rem 0 !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
   }
@@ -718,33 +740,50 @@
     display: none !important;
   }
 
+  .priceBox h3 {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
   .price {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
     background: none !important;
     -webkit-text-fill-color: #ffffff !important;
     color: #ffffff !important;
+    margin: 0.5rem 0 !important;
+    min-height: auto !important;
+  }
+
+  .priceNote {
+    font-size: 0.75rem !important;
+    margin-top: 0.5rem !important;
   }
 
   /* Force page break before Agenda section */
   .agendaSection {
     page-break-before: always !important;
     break-before: page !important;
-    min-height: 100vh !important;
-    height: 100vh !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    box-sizing: border-box !important;
-    padding: 2rem 0 !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 1rem 0 !important;
   }
 
-  .agendaTitle {
+  .agendaTitle,
+  .agendaTitleText {
     margin-top: 0 !important;
+    font-size: 1.6rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .agendaSubtitle,
+  .agendaSubtitleText {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.75rem !important;
   }
 
   .agendaGrid {
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 0.75rem !important;
+    gap: 0.5rem !important;
   }
 
   .agendaItem {
@@ -753,7 +792,7 @@
     opacity: 1 !important;
     transform: none !important;
     animation: none !important;
-    padding: 0.75rem !important;
+    padding: 0.5rem !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
   }
@@ -764,13 +803,18 @@
     display: none !important;
   }
 
+  .agendaNumber {
+    font-size: 0.65rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+
   .agendaItem h4 {
-    font-size: 0.9rem !important;
-    margin-bottom: 0.3rem !important;
+    font-size: 0.8rem !important;
+    margin-bottom: 0.2rem !important;
   }
 
   .agendaItem p {
-    font-size: 0.75rem !important;
-    line-height: 1.4 !important;
+    font-size: 0.7rem !important;
+    line-height: 1.3 !important;
   }
 }

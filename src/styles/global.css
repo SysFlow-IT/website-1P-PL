@@ -209,6 +209,11 @@ html {
 }
 
 /* ==================== PRINT STYLES ==================== */
+@page {
+  size: landscape;
+  margin: 0.5in;
+}
+
 @media print {
   /* Reset and base print settings */
   * {
@@ -235,17 +240,11 @@ html {
     opacity: 1 !important;
   }
 
-  /* Section base styles for print - full page, centered */
+  /* Section base styles for print - natural height, page breaks */
   .section {
-    min-height: 100vh !important;
-    height: 100vh !important;
-    padding: 2rem !important;
+    padding: 1.5rem 0 !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    box-sizing: border-box !important;
   }
 
   /* Force page break before each major section */
@@ -271,21 +270,21 @@ html {
   /* Container adjustments for print */
   .container {
     max-width: 100% !important;
-    padding: 0 2rem !important;
+    padding: 0 1rem !important;
     width: 100% !important;
   }
 
   /* Section titles for print */
   .section-title {
-    font-size: 2rem !important;
-    margin-bottom: 1rem !important;
+    font-size: 1.8rem !important;
+    margin-bottom: 0.75rem !important;
     page-break-after: avoid !important;
     break-after: avoid !important;
   }
 
   .section-description {
-    font-size: 1rem !important;
-    margin-bottom: 1rem !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 0.75rem !important;
   }
 
   /* Ensure dark sections print with proper colors */
@@ -331,11 +330,9 @@ html {
     break-inside: avoid !important;
   }
 
-  /* Links - show URL for important links */
-  a[href^="http"]:not([href*="unsplash"]):after {
-    content: " (" attr(href) ")";
-    font-size: 0.8em;
-    color: #aaaaaa;
+  /* Links - don't show URLs in print */
+  a[href^="http"]:after {
+    content: none !important;
   }
 
   /* Hide decorative overlays */
