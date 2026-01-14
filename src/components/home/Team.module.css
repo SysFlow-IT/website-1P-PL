@@ -175,3 +175,65 @@
     color: rgba(255, 255, 255, 0.8);
   }
 }
+
+/* Print styles for Team section */
+@media print {
+  .section {
+    min-height: 100vh !important;
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 2rem !important;
+    box-sizing: border-box !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .teamGrid {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 2rem !important;
+    max-width: 100% !important;
+  }
+
+  .teamMember {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    flex: 0 0 250px !important;
+    max-width: 250px !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .memberAvatar {
+    aspect-ratio: 1 !important;
+    height: auto !important;
+    max-height: 200px !important;
+  }
+
+  .memberImage {
+    object-fit: cover !important;
+  }
+
+  .memberGradient {
+    display: none !important;
+  }
+
+  .teamMemberContent {
+    min-height: auto !important;
+    padding: 1rem !important;
+  }
+
+  .teamMember h3 {
+    font-size: 1.1rem !important;
+    color: #ffffff !important;
+  }
+
+  .memberRole {
+    font-size: 0.8rem !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+}

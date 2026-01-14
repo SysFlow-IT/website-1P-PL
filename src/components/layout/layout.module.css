@@ -336,3 +336,43 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
+
+/* Print styles for navbar */
+@media print {
+  .navbar {
+    position: relative !important;
+    background: #111111 !important;
+    padding: 1rem 0 !important;
+    display: block !important;
+    transform: none !important;
+  }
+
+  .navbar.hidden {
+    transform: none !important;
+  }
+
+  .navCluster {
+    display: none !important;
+  }
+
+  .mobileToggle {
+    display: none !important;
+  }
+
+  .brand {
+    justify-content: center !important;
+  }
+
+  .brandMark {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .brandText {
+    color: #ffffff !important;
+  }
+
+  .footer {
+    display: none !important;
+  }
+}

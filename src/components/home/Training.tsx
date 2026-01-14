@@ -57,31 +57,33 @@ export const Training: React.FC = () => {
           </p>
         </div>
 
-        <h3
-          className={`${styles.agendaTitle} ${styles.agendaTitleText}`}
-          style={{ color: "#fff" }}
-        >
-          Agenda Szkolenia
-        </h3>
-        <p
-          className={`${styles.agendaSubtitle} ${styles.agendaSubtitleText}`}
-          style={{ color: "#fff" }}
-        >
-          Program dostosowujemy do specyfiki Twojej firmy, ale standardowa
-          agenda obejmuje następujące moduły:
-        </p>
+        <div className={styles.agendaSection}>
+          <h3
+            className={`${styles.agendaTitle} ${styles.agendaTitleText}`}
+            style={{ color: "#fff" }}
+          >
+            Agenda Szkolenia
+          </h3>
+          <p
+            className={`${styles.agendaSubtitle} ${styles.agendaSubtitleText}`}
+            style={{ color: "#fff" }}
+          >
+            Program dostosowujemy do specyfiki Twojej firmy, ale standardowa
+            agenda obejmuje następujące moduły:
+          </p>
 
-        <div className={styles.agendaGrid}>
-          {AGENDA_ITEMS.map((item) => (
-            <div
-              key={item.number}
-              className={`${styles.agendaItem} ${styles.visible}`}
-            >
-              <div className={styles.agendaNumber}>{item.number}</div>
-              <h4>{item.title}</h4>
-              <p>{item.description}</p>
-            </div>
-          ))}
+          <div className={styles.agendaGrid}>
+            {AGENDA_ITEMS.map((item) => (
+              <div
+                key={item.number}
+                className={`${styles.agendaItem} ${styles.visible}`}
+              >
+                <div className={styles.agendaNumber}>{item.number}</div>
+                <h4>{item.title}</h4>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
