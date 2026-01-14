@@ -305,7 +305,10 @@
     background: #111111 !important;
     page-break-after: always !important;
     break-after: page !important;
-    padding: 2rem !important;
+    padding: 3rem 2rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .heroVideo,
@@ -316,24 +319,35 @@
   }
 
   .heroInner {
-    margin: 0 !important;
-    padding: 1rem 0 !important;
+    margin: 0 auto !important;
+    padding: 2rem !important;
     animation: none !important;
+    max-width: 800px !important;
+    text-align: center !important;
+  }
+
+  .serviceLabel {
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-align: center !important;
   }
 
   .title {
     font-size: 2.5rem !important;
     margin-top: 0 !important;
     color: #ffffff !important;
+    text-align: center !important;
   }
 
   .subtitle {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     color: rgba(255, 255, 255, 0.9) !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    margin: 1.5rem auto 2rem !important;
   }
 
-  .serviceLabel {
-    color: rgba(255, 255, 255, 0.7) !important;
+  .heroActions {
+    justify-content: center !important;
   }
 
   .primaryAction,

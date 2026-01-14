@@ -862,9 +862,20 @@
     backdrop-filter: none !important;
   }
 
+  /* Force page break before Process section */
+  .processSection {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+
+  .processTitle {
+    font-size: 1.8rem !important;
+    margin: 0 0 1rem !important;
+  }
+
   .processStepsStatic {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 1rem !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 0.5rem !important;
   }
 
   .processStepStatic {
@@ -876,22 +887,48 @@
   }
 
   .processStepStatic .stepImageWrapper {
-    height: 120px !important;
+    height: 80px !important;
+  }
+
+  .stepImage {
+    object-fit: cover !important;
+  }
+
+  .processStepStatic .stepContent {
+    padding: 0.75rem !important;
   }
 
   .processStepStatic h4 {
     color: #ffffff !important;
-    font-size: 1rem !important;
+    font-size: 0.85rem !important;
+    margin-bottom: 0.3rem !important;
   }
 
   .processStepStatic p {
     color: rgba(255, 255, 255, 0.85) !important;
-    font-size: 0.85rem !important;
+    font-size: 0.7rem !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Force page break before Areas section */
+  .areasSection {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+
+  .areasTitle {
+    font-size: 1.8rem !important;
+    margin: 0 0 0.5rem !important;
+  }
+
+  .areasSubtitle {
+    font-size: 0.9rem !important;
+    margin-bottom: 1rem !important;
   }
 
   .automationAreas {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 1rem !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.75rem !important;
   }
 
   .areaCard {
@@ -901,7 +938,7 @@
     transform: none !important;
     filter: none !important;
     animation: none !important;
-    padding: 1rem !important;
+    padding: 0.75rem !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
   }
@@ -914,23 +951,13 @@
 
   .areaCard h4 {
     color: #ffffff !important;
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 0.3rem !important;
   }
 
   .areaCard p {
     color: rgba(255, 255, 255, 0.85) !important;
-    font-size: 0.85rem !important;
-    line-height: 1.5 !important;
-  }
-
-  .areasTitle,
-  .processTitle {
-    font-size: 1.5rem !important;
-    margin: 1.5rem 0 1rem !important;
-  }
-
-  .areasSubtitle {
-    font-size: 0.9rem !important;
-    margin-bottom: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1.4 !important;
   }
 }
