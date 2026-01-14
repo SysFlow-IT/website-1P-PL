@@ -249,22 +249,20 @@
 /* Print styles for CTA section */
 @media print {
   .section {
-    min-height: 100vh !important;
-    height: 100vh !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
+    min-height: auto !important;
+    height: auto !important;
     box-sizing: border-box !important;
-    padding: 3rem !important;
+    padding: 2rem 3rem !important;
     background: #111111 !important;
     text-align: center !important;
   }
 
   .title {
-    font-size: 2rem !important;
+    font-size: 1.6rem !important;
     text-align: center !important;
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .title::after {
@@ -274,19 +272,21 @@
 
   .description {
     text-align: center !important;
-    font-size: 1rem !important;
-    max-width: 80% !important;
-    margin: 0 auto 2rem !important;
+    font-size: 0.85rem !important;
+    max-width: 100% !important;
+    margin: 0 auto 1rem !important;
+    width: 100% !important;
   }
 
   .steps {
     opacity: 1 !important;
     transform: none !important;
     animation: none !important;
-    max-width: 80% !important;
-    margin: 0 auto 2rem !important;
+    max-width: 100% !important;
+    margin: 0 auto 1rem !important;
     text-align: left !important;
-    padding: 2rem !important;
+    padding: 1rem !important;
+    width: 100% !important;
   }
 
   .steps::before {
@@ -294,22 +294,23 @@
   }
 
   .steps h3 {
-    font-size: 1.1rem !important;
-    margin-bottom: 1rem !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 0.75rem !important;
   }
 
   .stepsList {
-    font-size: 0.95rem !important;
+    font-size: 0.8rem !important;
+    line-height: 1.5 !important;
   }
 
   .stepsList li {
-    margin-bottom: 0.75rem !important;
+    margin-bottom: 0.5rem !important;
   }
 
   .buttons {
     justify-content: center !important;
-    gap: 1.5rem !important;
-    margin-top: 1.5rem !important;
+    gap: 1rem !important;
+    margin-top: 1rem !important;
   }
 
   .primary,
@@ -317,8 +318,8 @@
     background: transparent !important;
     border: 1px solid #ffffff !important;
     color: #ffffff !important;
-    padding: 0.8rem 2rem !important;
-    font-size: 0.9rem !important;
+    padding: 0.6rem 1.5rem !important;
+    font-size: 0.8rem !important;
   }
 
   .primary {

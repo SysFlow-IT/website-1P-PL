@@ -300,10 +300,10 @@
 /* Print styles for Hero */
 @media print {
   .hero {
-    min-height: 100vh !important;
-    height: 100vh !important;
+    min-height: auto !important;
+    height: auto !important;
     background: #111111 !important;
-    padding: 3rem !important;
+    padding: 2rem 3rem !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
@@ -320,9 +320,9 @@
 
   .heroInner {
     margin: 0 auto !important;
-    padding: 2rem !important;
+    padding: 1rem !important;
     animation: none !important;
-    max-width: 90% !important;
+    max-width: 100% !important;
     text-align: center !important;
     display: flex !important;
     flex-direction: column !important;
@@ -333,11 +333,11 @@
   .serviceLabel {
     color: rgba(255, 255, 255, 0.7) !important;
     text-align: center !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.75rem !important;
   }
 
   .title {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
     margin-top: 0 !important;
     color: #ffffff !important;
     text-align: center !important;
@@ -345,17 +345,17 @@
   }
 
   .subtitle {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
     color: rgba(255, 255, 255, 0.9) !important;
     text-align: center !important;
-    max-width: 80% !important;
-    margin: 1.5rem auto 2rem !important;
-    line-height: 1.6 !important;
+    max-width: 90% !important;
+    margin: 1rem auto 1.5rem !important;
+    line-height: 1.5 !important;
   }
 
   .heroActions {
     justify-content: center !important;
-    gap: 1.5rem !important;
+    gap: 1rem !important;
   }
 
   .primaryAction,
@@ -363,8 +363,8 @@
     background: transparent !important;
     border: 1px solid #ffffff !important;
     color: #ffffff !important;
-    padding: 0.8rem 1.5rem !important;
-    font-size: 0.9rem !important;
+    padding: 0.6rem 1.2rem !important;
+    font-size: 0.85rem !important;
   }
 
   .primaryAction::before,

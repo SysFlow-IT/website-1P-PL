@@ -658,12 +658,8 @@
 @media print {
   .section {
     background: #111111 !important;
-    min-height: 100vh !important;
-    height: 100vh !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
+    min-height: auto !important;
+    height: auto !important;
     box-sizing: border-box !important;
     padding: 2rem 3rem !important;
   }
@@ -681,37 +677,38 @@
     text-shadow: none !important;
     filter: none !important;
     text-align: center !important;
+    width: 100% !important;
   }
 
   .titleText {
-    font-size: 1.6rem !important;
+    font-size: 1.5rem !important;
     margin-bottom: 0.5rem !important;
   }
 
   .descriptionText {
-    font-size: 0.85rem !important;
-    margin-bottom: 1rem !important;
-    line-height: 1.5 !important;
+    font-size: 0.8rem !important;
+    margin-bottom: 0.75rem !important;
+    line-height: 1.4 !important;
   }
 
   .features {
     background: rgba(30, 30, 30, 0.95) !important;
     backdrop-filter: none !important;
-    padding: 1rem !important;
-    margin: 0.75rem 0 !important;
+    padding: 0.75rem !important;
+    margin: 0.5rem 0 !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
   }
 
   .features h3 {
-    font-size: 1.2rem !important;
-    margin-bottom: 0.75rem !important;
+    font-size: 1rem !important;
+    margin-bottom: 0.5rem !important;
     text-align: center !important;
   }
 
   .featuresGrid {
     grid-template-columns: repeat(5, 1fr) !important;
-    gap: 0.5rem !important;
+    gap: 0.4rem !important;
   }
 
   .feature {
@@ -719,8 +716,8 @@
     transform: none !important;
     filter: none !important;
     animation: none !important;
-    padding: 0.25rem !important;
-    font-size: 0.75rem !important;
+    padding: 0.2rem !important;
+    font-size: 0.65rem !important;
   }
 
   .feature::before {
@@ -728,7 +725,7 @@
   }
 
   .featureIcon {
-    font-size: 1rem !important;
+    font-size: 0.85rem !important;
   }
 
   .priceBox {
@@ -737,8 +734,8 @@
     opacity: 1 !important;
     transform: none !important;
     animation: none !important;
-    padding: 1rem !important;
-    margin: 0.75rem 0 !important;
+    padding: 0.75rem !important;
+    margin: 0.5rem 0 !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
   }
@@ -748,34 +745,30 @@
   }
 
   .priceBox h3 {
-    font-size: 0.9rem !important;
-    margin-bottom: 0.5rem !important;
+    font-size: 0.8rem !important;
+    margin-bottom: 0.3rem !important;
   }
 
   .price {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     background: none !important;
     -webkit-text-fill-color: #ffffff !important;
     color: #ffffff !important;
-    margin: 0.5rem 0 !important;
+    margin: 0.3rem 0 !important;
     min-height: auto !important;
   }
 
   .priceNote {
-    font-size: 0.75rem !important;
-    margin-top: 0.5rem !important;
+    font-size: 0.65rem !important;
+    margin-top: 0.3rem !important;
   }
 
-  /* Force page break before Agenda section - full page centered */
+  /* Force page break before Agenda section */
   .agendaSection {
     page-break-before: always !important;
     break-before: page !important;
-    min-height: 100vh !important;
-    height: 100vh !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
+    min-height: auto !important;
+    height: auto !important;
     box-sizing: border-box !important;
     padding: 2rem 3rem !important;
   }
@@ -783,21 +776,23 @@
   .agendaTitle,
   .agendaTitleText {
     margin-top: 0 !important;
-    font-size: 1.6rem !important;
+    font-size: 1.5rem !important;
     margin-bottom: 0.5rem !important;
     text-align: center !important;
+    width: 100% !important;
   }
 
   .agendaSubtitle,
   .agendaSubtitleText {
-    font-size: 0.85rem !important;
+    font-size: 0.8rem !important;
     margin-bottom: 0.75rem !important;
     text-align: center !important;
+    width: 100% !important;
   }
 
   .agendaGrid {
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 0.5rem !important;
+    gap: 0.4rem !important;
   }
 
   .agendaItem {
@@ -806,7 +801,7 @@
     opacity: 1 !important;
     transform: none !important;
     animation: none !important;
-    padding: 0.5rem !important;
+    padding: 0.4rem !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
   }
@@ -818,17 +813,17 @@
   }
 
   .agendaNumber {
-    font-size: 0.65rem !important;
-    margin-bottom: 0.2rem !important;
+    font-size: 0.55rem !important;
+    margin-bottom: 0.15rem !important;
   }
 
   .agendaItem h4 {
-    font-size: 0.8rem !important;
-    margin-bottom: 0.2rem !important;
+    font-size: 0.7rem !important;
+    margin-bottom: 0.15rem !important;
   }
 
   .agendaItem p {
-    font-size: 0.7rem !important;
-    line-height: 1.3 !important;
+    font-size: 0.6rem !important;
+    line-height: 1.2 !important;
   }
 }
