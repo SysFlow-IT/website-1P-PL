@@ -296,3 +296,58 @@
     flex-direction: column;
   }
 }
+
+/* Print styles for Hero */
+@media print {
+  .hero {
+    min-height: auto !important;
+    height: auto !important;
+    background: #111111 !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    padding: 2rem !important;
+  }
+
+  .heroVideo,
+  .heroOverlay,
+  .heroGradientTop,
+  .heroGradientBottom {
+    display: none !important;
+  }
+
+  .heroInner {
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+    animation: none !important;
+  }
+
+  .title {
+    font-size: 2.5rem !important;
+    margin-top: 0 !important;
+    color: #ffffff !important;
+  }
+
+  .subtitle {
+    font-size: 1rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  .serviceLabel {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+
+  .primaryAction,
+  .secondaryAction {
+    background: transparent !important;
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
+    padding: 0.8rem 1.5rem !important;
+  }
+
+  .primaryAction::before,
+  .primaryAction::after,
+  .secondaryAction::before,
+  .secondaryAction::after {
+    display: none !important;
+  }
+}

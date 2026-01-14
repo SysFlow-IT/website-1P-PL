@@ -207,3 +207,139 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ==================== PRINT STYLES ==================== */
+@media print {
+  /* Reset and base print settings */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide non-essential elements for print */
+  nav,
+  footer,
+  video,
+  .heroVideo,
+  .videoBackground {
+    display: none !important;
+  }
+
+  /* Reset app opacity */
+  .app {
+    opacity: 1 !important;
+  }
+
+  /* Section base styles for print */
+  .section {
+    padding: 2rem 0 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Force page break before each major section */
+  #problems,
+  #solutions,
+  #training,
+  #flowone,
+  #team,
+  #testimonials,
+  #why-choose,
+  #cta,
+  #contact {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+
+  /* Hero section - first page, no break before */
+  #hero {
+    page-break-before: auto !important;
+    break-before: auto !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 3rem 0 !important;
+  }
+
+  /* Container adjustments for print */
+  .container {
+    max-width: 100% !important;
+    padding: 0 1.5rem !important;
+  }
+
+  /* Section titles for print */
+  .section-title {
+    font-size: 2rem !important;
+    margin-bottom: 1.5rem !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  .section-description {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Ensure dark sections print with proper colors */
+  .section--dark,
+  .section--darker {
+    background: #111111 !important;
+    color: #ffffff !important;
+  }
+
+  .section--dark .section-title,
+  .section--darker .section-title,
+  .section--dark .section-description,
+  .section--darker .section-description {
+    color: #ffffff !important;
+  }
+
+  /* Prevent orphans and widows */
+  p, h1, h2, h3, h4 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Keep headings with following content */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* Cards and list items - prevent breaks inside */
+  article,
+  [class*="card"],
+  [class*="Card"],
+  [class*="item"],
+  [class*="Item"] {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Links - show URL for important links */
+  a[href^="http"]:not([href*="unsplash"]):after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666666;
+  }
+
+  /* Hide decorative overlays */
+  [class*="overlay"],
+  [class*="Overlay"],
+  [class*="gradient"],
+  [class*="Gradient"] {
+    display: none !important;
+  }
+}
